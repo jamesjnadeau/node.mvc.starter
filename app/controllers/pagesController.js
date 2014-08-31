@@ -5,7 +5,7 @@ var pagesController = new Controller();
 
 pagesController.main = function() {
   this.title = 'Locomotive';
-  this.content = 'Test Content';
+  this.content = 'Test Content 2';
   this.render();
 }
 

@@ -1,7 +1,11 @@
 {
-  "name": "app-name",
+  "name": "node.mvc.starter",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
   "dependencies": {
     "locomotive": "0.4.x",
     "bootable": "0.2.x",
@@ -13,9 +17,10 @@
     "mongoose": "~3.8.15",
     "mongoload": "~0.1.0",
     "jade": "~1.5.0",
-    "nodemon": "~1.2.1"
-  },
-  "scripts": {
-    "start": "node server.js"
+    "nodemon": "~1.2.1",
+    "passport": "~0.2.1",
+    "passport-local": "~1.0.0",
+    "bcrypt": "~0.8.0",
+    "mongoose-types": "~1.0.3"
   }
 }
