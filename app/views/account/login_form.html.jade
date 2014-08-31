@@ -1,9 +1,21 @@
-form(action='/login', method='POST')
-  .control-group
-    label(for='email') eMail
-    input(type='text', name='email')
-  .control-group
-    label(for='password') Password
-    input(type='password', name='password')
-  .form-actions
-    button.btn.btn-primary(type='submit') Login
+extends ../layout
+
+block content
+    .container(style="margin-top: 80px" )
+        .row
+            .col-md-4
+                form(action='/login', method='POST')
+                  .form-group
+                    label(for='email') Email
+                    input.form-control(type='text', name='email')
+                  .form-group
+                    label(for='password') Password
+                    input.form-control(type='password', name='password')
+                  .form-group
+                    button.btn.btn-lg.btn-primary.pull-right(type='submit') Login
+
+block styles
+    
+
+block scripts
+    

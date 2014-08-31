@@ -21,6 +21,8 @@ html
                     a.navbar-brand( href='/' ) Brand
                 .navbar-collapse.collapse
                     ul.nav.navbar-nav
+                        li 
+                            a(href='/login') Login
                         li.dropdown 
                             a.dropdown-toggle(data-toggle="dropdown") Menu 
                                 b.caret
@@ -30,8 +32,6 @@ html
                                 li
                                     a( href='/') Item 2
         block content
-        
-        - console.log('here');
 
     script( src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' )
     script( src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js' )
